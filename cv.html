@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Md. Akash Mia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .text-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-accent {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+        }
+        .cv-card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        @media print {
+            .no-print { display: none; }
+            body { background: white; color: black; }
+            .cv-card { border: none !important; box-shadow: none !important; background: transparent !important; }
+            .text-gradient { -webkit-text-fill-color: initial !important; background: none !important; color: #1e40af !important; }
+            .bg-gradient-accent { background: #1e40af !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+    <!-- Background Colorful Glows -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none opacity-20">
+        <div class="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-blue-500 blur-[150px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-purple-600 blur-[150px]"></div>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-6">
+        <!-- Control Bar -->
+        <div class="flex justify-between items-center no-print bg-slate-900/80 p-4 rounded-2xl border border-slate-800 backdrop-blur-md">
+            <a href="index.html" class="text-sm font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-2 transition-colors">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+            <button onclick="window.print()" class="px-5 py-2.5 bg-gradient-accent hover:opacity-90 font-medium text-xs rounded-xl flex items-center gap-2 transition-all shadow-lg shadow-blue-500/20">
+                <i class="fas fa-print"></i> Print / Download PDF
+            </button>
+        </div>
+
+        <!-- Main CV Layout -->
+        <div class="rounded-3xl p-8 sm:p-12 shadow-2xl space-y-10 cv-card">
+            
+            <!-- Header Section with Picture Integration -->
+            <div class="border-b border-slate-800/80 pb-8 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left w-full md:w-auto">
+                    
+                    <!-- IMAGE CONFIGURATION START -->
+                    <!-- This container loads your "akash.jpg" file. If the file is missing, it automatically falls back to a clean placeholder -->
+                    <div class="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden p-1 bg-gradient-accent shadow-xl shrink-0">
+                        <div class="w-full h-full rounded-xl overflow-hidden bg-slate-800">
+                            <img src="akash.jpg" alt="Md. Akash Mia" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=300&auto=format&fit=crop';">
+                        </div>
+                    </div>
+                    <!-- IMAGE CONFIGURATION END -->
+
+                    <div>
+                        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Md. Akash Mia</h1>
+                        <p class="text-gradient font-bold text-xl mt-1">Software Engineer Analyst</p>
+                    </div>
+                </div>
+                <div class="space-y-2 text-sm text-slate-400 w-full md:w-auto flex flex-col items-center md:items-end border-t border-slate-800/50 md:border-none pt-4 md:pt-0">
+                    <p class="flex items-center gap-2"><i class="fab fa-whatsapp text-emerald-400 w-4 text-center"></i> +880 1322-135538</p>
+                    <p class="flex items-center gap-2"><i class="fab fa-github text-blue-400 w-4 text-center"></i> github.com/mdakash38</p>
+                    <p class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-purple-400 w-4 text-center"></i> Bangladesh</p>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="space-y-3">
+                <h2 class="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-blue-500 class-gradient pl-3">Professional Summary</h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Dedicated software engineering undergraduate specializing in app UI layout ecosystems and modular architectural strategies. Proficient in running algorithm sequences and modern front-end build pipelines to drive performance optimization.
+                </p>
+            </div>
+
+            <!-- Academic Timeline -->
+            <div class="space-y-4">
+                <h2 class="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-purple-500 pl-3">Education</h2>
+                <div class="space-y-4">
+                    <div class="bg-slate-900/40 p-5 rounded-2xl border border-slate-800/60 hover:border-blue-500/30 transition-colors">
+                        <div class="flex justify-between items-start flex-wrap gap-2">
+                            <h3 class="font-bold text-white text-base">B.Sc. in Software Engineering</h3>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2.5 py-1 rounded-md font-semibold border border-blue-500/20">In Progress</span>
+                        </div>
+                        <p class="text-sm text-slate-300 mt-1">University of Frontier Technology, Bangladesh</p>
+                        <p class="text-xs text-slate-500 mt-2">Focus: Data Structures, Object-Oriented Layout Architecture • 2nd Year, 1st Semester</p>
+                    </div>
+                    <div class="bg-slate-900/40 p-5 rounded-2xl border border-slate-800/60 hover:border-purple-500/30 transition-colors">
+                        <div class="flex justify-between items-start flex-wrap gap-2">
+                            <h3 class="font-bold text-white text-base">Higher Secondary Certificate (HSC)</h3>
+                            <span class="text-xs bg-purple-500/10 text-purple-400 px-2.5 py-1 rounded-md font-semibold border border-purple-500/20">Completed 2022</span>
+                        </div>
+                        <p class="text-sm text-slate-300 mt-1">Kendua Government College</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tech Competencies -->
+            <div class="space-y-3">
+                <h2 class="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-emerald-500 pl-3">Technical Competencies</h2>
+                <div class="flex flex-wrap gap-2.5 pt-1">
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-blue-500/40 transition-colors">C / C++</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-orange-500/40 transition-colors">HTML5 & CSS3 Layouts</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-yellow-500/40 transition-colors">JavaScript ES6</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-red-500/40 transition-colors">Java Standard</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-blue-400/40 transition-colors">Flutter Framework</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-cyan-400/40 transition-colors">Dart Programming</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-amber-600/40 transition-colors">Python Basics</span>
+                    <span class="px-3.5 py-2 bg-slate-900/60 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 hover:border-slate-500/40 transition-colors">Linux / Ubuntu Operations</span>
+                </div>
+            </div>
+
+            <!-- System Deployments -->
+            <div class="space-y-4">
+                <h2 class="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-cyan-500 pl-3">Core Engineering Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-5 bg-slate-900/40 rounded-2xl border border-slate-800/60 hover:border-cyan-500/30 transition-colors space-y-2">
+                        <h3 class="font-bold text-white text-base">Grocery Retail Mobile Application</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Built using Flutter/Dart framework. Features unified state configuration pathways, optimal list-rendering logic patterns, and multi-view page layouts.</p>
+                        <p class="text-[11px] text-cyan-400 font-bold tracking-wider uppercase">Stack: Flutter, Dart</p>
+                    </div>
+                    <div class="p-5 bg-slate-900/40 rounded-2xl border border-slate-800/60 hover:border-purple-500/30 transition-colors space-y-2">
+                        <h3 class="font-bold text-white text-base">Foodie Platform Web Interface</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Responsive client-facing digital showcase platform. Focuses on structural styling grids, smooth display viewports, and clean code conventions.</p>
+                        <p class="text-[11px] text-purple-400 font-bold tracking-wider uppercase">Stack: HTML5, CSS3, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
